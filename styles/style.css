@@ -76,6 +76,13 @@ hr.light-100{
   margin-bottom: 1rem;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #carouselExampleIndicators {
   padding: 0;
   width: 70%;
