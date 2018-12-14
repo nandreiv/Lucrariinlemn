@@ -1,5 +1,6 @@
 [
-  { "categorie" : "Scari",
+  { 
+    "categorie" : "Scari",
     "nume":"Placare scara proiect Maria",
     "imagine1":"https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria.jpg",
     "imagine2":"https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria_1.jpg",
@@ -12,6 +13,6 @@
     "imagine9":"https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria_8.jpg",
     "imagine10":"https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria_9.jpg",
     "imagine11":"https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria_10.jpg",
-    "imagine12":"https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria_11.jpg",
+    "imagine12":"https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria_11.jpg"
   }
 ]
