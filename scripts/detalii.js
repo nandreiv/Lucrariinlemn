@@ -6,17 +6,19 @@ function getProjects() {
     if (this.readyState == 4 && this.status == 200) {
       imagini = JSON.parse(this.responseText);
       drawTable();
+      console.log(imagini.nume);
+      //document.getElementById("#projectName").innerHTML = `${imagini.nume}`;
     }
   };
   xhttp.open("GET", `https://lucrari-in-lemn.firebaseio.com/${idx}.json`, true)
   xhttp.send();
+
+  
 }
 
 function drawTable() {
 
-  for (var i in imagini) {
-
-        //document.getElementById("#projectName").innerHTML = imagini[i].nume;
+  for (var i in imagini) {      
 
         document.querySelector("#imageShow").insertAdjacentHTML(
           'afterbegin',
@@ -27,7 +29,11 @@ function drawTable() {
           </div>
         </div>`
         )
-    //}
   }
+
+  document.querySelector("#mainDiv").insertAdjacentHTML(
+    'afterbegin',
+    `<h1>${imagini.nume}</h1>
+     <hr class=light">`)
 }
 
