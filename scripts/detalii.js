@@ -12,15 +12,13 @@ function getProjects() {
   };
   xhttp.open("GET", `https://lucrari-in-lemn.firebaseio.com/${idx}.json`, true)
   xhttp.send();
-
-  
 }
 
 function drawTable() {
 
   for (var i in imagini) {
 
-    if(/imagine/.test(i)) {
+    if (/imagine/.test(i)) {
       document.querySelector("#imageShow").insertAdjacentHTML(
         'afterbegin',
         `<div class="col-md-4">
@@ -31,11 +29,7 @@ function drawTable() {
       </div>`
       )
     }
-    }
-
-  //console.log(s);
-
-
+  }
 
   document.querySelector("#mainDiv").insertAdjacentHTML(
     'afterbegin',
