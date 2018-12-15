@@ -18,18 +18,24 @@ function getProjects() {
 
 function drawTable() {
 
-  for (var i in imagini) {      
+  for (var i in imagini) {
 
-        document.querySelector("#imageShow").insertAdjacentHTML(
-          'afterbegin',
-          `<div class="col-md-4">
-          <div class="card">
-            <a class="lightbox" href="${imagini[i]}">
-            <img class="card-img-top" alt="" src="${imagini[i]}">
-          </div>
-        </div>`
-        )
-  }
+    if(/imagine/.test(i)) {
+      document.querySelector("#imageShow").insertAdjacentHTML(
+        'afterbegin',
+        `<div class="col-md-4">
+        <div class="card">
+          <a class="lightbox" href="${imagini[i]}">
+          <img class="card-img-top" alt="" src="${imagini[i]}">
+        </div>
+      </div>`
+      )
+    }
+    }
+
+  //console.log(s);
+
+
 
   document.querySelector("#mainDiv").insertAdjacentHTML(
     'afterbegin',
