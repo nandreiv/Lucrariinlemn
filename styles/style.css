@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis|Fanwood+Text|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Poppins');
 
 
 html, body {
@@ -10,7 +10,7 @@ footer {
   background-color: #3f3f3f;
   color: #d5d5d5;
   padding-top: 2rem;
-  font-family: Montserrat;
+  font-family: Dosis, sans-serif;
   margin-top: 10px;
 }
 
@@ -28,32 +28,25 @@ hr.light-100{
   width: 100%;
 }
 
-.jumbotron {
-  padding: 10px;
-}
 
 .row p {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 16px;
-}
-
-.navbar {
-  background-color: #deb887;
-}
-
-.navbar-nav li {
-  font-size: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .nav-item a {
   color: #fff;
-  /*font-size: 1.5vw;*/
+  margin: 15px;
+}
+
+.navbar p {
+  color: #d5d5d5;
+  font-family: Dosis, sans-serif;
+  font-size: 30px;
 }
 
 .display-4 {
-  font-family: Montserrat;
+  font-family: Dosis, sans-serif;
   font-style: italic;
 }
 
@@ -83,6 +76,12 @@ hr.light-100{
   justify-content: center;
 }
 
+#logoDiv {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
 #carouselExampleIndicators {
   padding: 0;
   width: 70%;
@@ -91,7 +90,7 @@ hr.light-100{
 }
 
 #captionSlide1 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   text-shadow: 1px 1px 10px #000;
 }
 
@@ -110,4 +109,40 @@ hr.light-100{
 
 #welcomeAlert {
   color: red;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+
+/*---Media Querries---*/
+
+@media (min-width: 992px) {
+  .nav-item {
+    font-size: 180%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-item {
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .nav-item {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-item {
+    font-size: 60%;
+  }
 }

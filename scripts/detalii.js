@@ -1,11 +1,11 @@
 var idx = window.location.search.substring(4);
 
-function getProject() {
+function getProjects() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       imagini = JSON.parse(this.responseText);
-      drawTable();
+      //drawTable();
     }
   };
   xhttp.open("GET", `https://lucrari-in-lemn.firebaseio.com/${idx}.json`, true)
@@ -18,6 +18,7 @@ function drawTable() {
   for (var i = 0; i < imagini.length; i++) {
     if (i != null) {
       str += `<tr>
+                <td><b>${imagini[i].nume}</b></td>
                 <td><img src="${imagini[i].imagine1}"/></td>
                 <td><img src="${imagini[i].imagine2}"/></td>
                 <td><img src="${imagini[i].imagine3}"/></td>

@@ -18,15 +18,16 @@ function drawCards (){
   for (var i in imagini) {
 
    document.querySelector("#contentProjects").insertAdjacentHTML (
-    'afterend',
+    'afterbegin',
     `<div class="col-md-4">
-                    <div class="card">
-                      <img class="card-img-top" src="${imagini[i].imagine1}">
-                        <h4 class="card-title">${imagini[i].nume}</h4>
-                        <button  class="btn btn-outline-secondary" onclick="window.location='detalii.html?id=${i}'">Vezi proiect</button>
-                      </div>
-                      </div>
-                    </div>`
+        <div class="card">
+          <img class="card-img-top" src="${imagini[i].imagine1}">
+          <div class="card-body">
+            <h4 class="card-title">${imagini[i].nume}</h4>
+            <button  class="btn btn-outline-secondary" onclick="window.location='detalii.html?id=${i}'">Vezi proiect</button>
+          </div>
+        </div>
+      </div>`
    )
   }
 }
