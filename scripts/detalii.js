@@ -14,12 +14,9 @@ function getProjects() {
 
 function drawTable() {
 
-  for (var i = 0; i < imagini.length; i++) {
+  for (var i in imagini) {
 
-    var nume = imagini[i].nume;
-    console.log(nume);
-
-        document.getElementById("#projectName").innerHTML = imagini[i].nume;
+        //document.getElementById("#projectName").innerHTML = imagini[i].nume;
 
         document.querySelector("#imageShow").insertAdjacentHTML(
           'afterbegin',
