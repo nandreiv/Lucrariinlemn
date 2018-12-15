@@ -12,19 +12,25 @@ function getProjects() {
   xhttp.send();
 }
 
-function drawTable (){
+function drawTable() {
 
-  for (var i in imagini) {
+  for (var i = 0; i < imagini.length; i++) {
 
-   document.querySelector("#imageShow").insertAdjacentHTML (
-    'afterbegin',
-    ` <div class="col-md-4">
-        <div class="card">
-          <a class="lightbox" href="${imagini[i]}">
-          <img class="card-img-top" alt="" src="${imagini[i]}">
-        </div>
-      </div>`
-   )
+    var nume = imagini[i].nume;
+    console.log(nume);
+
+        document.getElementById("#projectName").innerHTML = imagini[i].nume;
+
+        document.querySelector("#imageShow").insertAdjacentHTML(
+          'afterbegin',
+          `<div class="col-md-4">
+          <div class="card">
+            <a class="lightbox" href="${imagini[i]}">
+            <img class="card-img-top" alt="" src="${imagini[i]}">
+          </div>
+        </div>`
+        )
+    //}
   }
 }
 
