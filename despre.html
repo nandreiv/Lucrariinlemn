@@ -12,14 +12,15 @@
 
   <!-- Latest compiled and minified CSS Bootstrap -->
   <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
+    crossorigin="anonymous" />
 
   <!-- Local CSS file to override Bootstrap defaults and add more -->
   <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
-<body onload="getProjects();">
+<body>
 
   <!--Top Navigation Bar-->
 
@@ -29,23 +30,122 @@
           width="150"></a>
     </div>
     <p>0722.733.216</p>
-    <div class="collapse navbar-collapse topMenu"  id="navbarNav">
+    <div class="collapse navbar-collapse topMenu" id="navbarNav">
       <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Acasa</a>
+        </li>
         <li class="nav-item active">
-          <a href="#" class="nav-link">Acasa</a>
+          <a href="despre.html" class="nav-link">Povestea Noastra</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Povestea Noastra</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!--Welcome Section-->
+  <div class="container padding" id="welcomeHead">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h3 class="display-4" id="welcomeHeader">Povestea noastra</h3>
+      </div>
+      <hr class="light">
+      <div class="col-12">
+        <p class="lead" id="aboutText">Intreprinderea Individuala Predescu Georghe este una dintre
+          firmele care datorita profesionalismului a reusit de-a lungul timpului sa-si modeleze
+          produsele in functie de evolutia pietei si de nevoile clientilor.<br><br>
 
+          Cu o experienta de mai mult de 50 de ani in domeniu, in regim particular, nascut practic cu
+          dalta si ciocanul in mana, Gheorghe Predescu a reusit sa continue o traditie mostenita din
+          tata in fiu de ani de zile.<br><br>
+
+          Daca ar fi sa facem un scurt istoric putem porni cu anii 1953 cand Predescu Marin si-a parasit
+          localitatea natala, ajungand in Bucuresti unde si-a facut ucenicia, urmand sa se mute intr-un
+          sat de la marginea capitalei unde cu multa pricepere si iscusinta si-a intemeiat un atelier de
+          tamplarie, dar si o familie.<br><br>
+
+          Baiatul cel mai mare este si cel care i-a calcat pe urme tatului reusind cu timpul sa-si dezvolte
+          propria afacere.<br><br>
+
+          Daca la inceput produsele principale erau usile si ferestrele din lemn, fabricate intr-un mic
+          atelier de la periferia Bucurestiului, pe vremea cand nici nu se auzise de termopan, s-a ajuns
+          ca in ultimii ani afacerea sa se extinda. Obiectul principal de activitate este executarea de
+          scari personalizate (din lemn masiv) si de foisoare, mansarde, extinzandu-se in acelasi timp si
+          atelierul, utilajele performante pe care le gasim aici fiind competitive cu cele din fabricile mari.<br><br>
+
+          Axat pe prelucrarea scarilor din lemn trebuie sa precizam faptul ca portofoliul de produse este
+          mult mai extins, practic se poate executa tot ceea ce se poate face din lemn, acceptand orice
+          provocare. Complexitatea lucrarilor reprezinta pentru noi o sansa de a ne pune in valoare
+          profesionalismul si experienta acumulata in domeniu, dar si o sursa de dobandire de noi cunostinte
+          si de autodepasire, toate acestea avand ca scop satisfacerea nevoilor clientilor nostri.</p>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <h3 class="display-4" id="welcomeHeader">Ce spun clientii</h3>
+    </div>
+    <hr class="light">
+    <div class="container">
+      <div class="row masonry-grid">
+        <div class="col-md-6 col-lg-6 masonry-column">
+          <div class="clientTest">
+            <p>Domnule Gheorghe PREDESCU,<br><br>
+
+                Prin intermediul acestui mail doresc să-mi exprim încă  o dată mulţumirile pentru modul 
+                în care aţi executat lucrările comandate - 5 uşi de stejar masiv şi o scară interioară cu 
+                balustradă din stejar, cu peste 20 de trepte. Deşi au trecut aproape cinci ani, comenzile 
+                fiind executate în lunile septembrie şi respectiv decembrie 2006, vizitatorii remarcă şi acum 
+                cât de bine s-au păstrat, calitatea, prelucrarea şi montura estetică a lor fiind admirate de 
+                fiecare dată. De câte ori voi avea ocazia vă voi recomanda cu căldură, lucrările executate 
+                pentru mine devenind o carte de vizită specială.<br><br>
+                
+                Cu consideraţie,<br>
+                Maria SAŞALOVICI<br>
+                24 aprilie 2012</p>
+          </div>
+          <div class="clientTest">
+            <p>Am o casa de vacant la munte si in urma cu 3 ani am apelat la d-l Predescu pentru amenajarea 
+              mansardei numai in lemn. La constructia acestei case au lucrat multe echipe de meseriasi ,fiind 
+              nevoita s-a renunt pe parcursul lucrarilor la unele dintre ele din cauza lucrarilor de proasta 
+              calitate pe care le faceau. Modul de lucru al d-lui Predescu,calitatea finisajelor,seriozitatea 
+              cu care a executat aceasta lucrare,m-au facut sa-ma hotarasc la mai multe lucrari in lemn(o scara 
+              din lemn,placarea cu lemn a alteia,parchet din lemn in camere si holuri).<br><br>
+              Mihai Victoria – mai 2012</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 masonry-column">
+          <div class="clientTest">
+            <p>Profesionalismul dublat de disponibilitate si dorinta pentru  executia de solutii atipice sunt 
+              calitati - tot mai rar intilnite – care il recomanda pe dl. Predescu pentru lucrari de buna 
+              calitate si durabile.<br><br>
+              Arh. Octavian POPA - 7 mai 2012</p>
+          </div>
+          <div class="clientTest">
+            <p>Dl. Predescu Gheorghe a realizat pentru Mănăstirea Comana o scară de lemn pentru accesul la 
+              etajul Casei Domneşti. Meşterul pune suflet în fiecare lucrare în parte, încât rezultatul final 
+              a fost peste aşteptările noastre. Modelul a fost ales de comun acord, în concordanţă cu 
+              caracteristiceile stilului bizantin pentru mobilierul bisericesc. Sunt foarte mulţumit de 
+              rezultat, comanda a fost realizată într-un timp optim, fără a se face rabat de la calitate. 
+              Lucrarea conferă siguranţă, stabilitate, confort, şi este deosebit de frumoasă. Recomand cu 
+              încredere atelierul de tâmplărie al dlui Predescu Gheorghe tuturor celor doresc calitatea 
+              lucrului bine făcut.<br>
+ 
+              Va pomenesc in rugaciuni,<br><br>
+                
+              Protos. Mihail Muscariu<br><br>
+                
+              = SFANTA MANASTIRE COMANA =<br>
+              com. Comana, jud. Giurgiu,<br>
+              tel/fax: 0246.283.075; 0724.215.607;<br> 
+              cod postal 087055<br>
+              web: www.manastireacomana.ro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Carousel Section-->
 
   <!--Pictures for the project-->
@@ -86,7 +186,8 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha256-jGAkJO3hvqIDc4nIY1sfh/FPbV+UK+1N+xJJg6zzr7A=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha256-jGAkJO3hvqIDc4nIY1sfh/FPbV+UK+1N+xJJg6zzr7A="
+    crossorigin="anonymous"></script>
 
 
 </body>
