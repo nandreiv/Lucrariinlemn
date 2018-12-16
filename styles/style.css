@@ -119,12 +119,7 @@ iframe {
 }
 
 .clientTest p {
-  margin: 5px;
-}
-
-.quoteSign {
-  font-size: 40px;
-  font-family: Roboto;
+  margin: 8px;
 }
 
 #mainDiv h1 {
