@@ -93,6 +93,15 @@ hr.light-100{
   box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
 
+.specialText {
+  color: red;
+}
+
+.topMenu {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #mainDiv h1 {
   font-family: Dosis;
   text-align: center;
@@ -135,9 +144,7 @@ hr.light-100{
   color: red;
 }
 
-#navbarNav {
-  justify-content: flex-end;
-}
+
 
 
 /*---Media Querries---*/
