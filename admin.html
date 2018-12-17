@@ -27,7 +27,7 @@
           width="150"></a>
     </div>
     <p id="phoneNav">0722.733.216</p>
-    <div class="collapse navbar-collapse topMenu"  id="navbarNav">
+    <div class="collapse navbar-collapse topMenu" id="navbarNav">
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item active">
           <a href="index.html" class="nav-link">Acasa</a>
@@ -54,7 +54,22 @@
         <h2 class="display-4">Proiectele noastre</h2>
       </div>
       <hr>
-      <button class="btn btn-primary btn-lg" id="addBtn">Adauga Proiect</button>
+      <div class="container" id="addFormDiv">
+        <a href="#addProject" id="addBtn" data-toggle="collapse"><button class="btn btn-primary btn-lg">Adauga Proiect</button></a>
+        <div class="panel-body collapse" id="addProject">
+          <form>
+            <div class="form-group">
+              <input id="projectName" name="project" type="text" placeholder="Nume Proiect" class="form-control">
+              <input id="projectCategory" name="category" type="text" placeholder="Categorie" class="form-control">
+              <div class="custom-file" id="customFileDiv">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+              <button class="btn btn-primary btn-lg" id="submitAdd">Adauga</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 

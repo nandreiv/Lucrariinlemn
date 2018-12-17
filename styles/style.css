@@ -220,6 +220,10 @@ iframe {
   margin: auto;
 }
 
+#projectName, #projectCategory, #submitAdd, #customFileDiv {
+  margin-top: 15px;
+}
+
 
 
 /*---Media Querries---*/
