@@ -4,9 +4,8 @@ function getProjects() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      imagini = JSON.parse(this.responseText);
+      proiecte = JSON.parse(this.responseText);
       drawTable();
-      console.log(imagini.nume);
       //document.getElementById("#projectName").innerHTML = `${imagini.nume}`;
     }
   };
@@ -16,24 +15,24 @@ function getProjects() {
 
 function drawTable() {
 
-  for (var i in imagini) {
+  for (var i in proiecte.imagini) {  
 
-    if (/imagine/.test(i)) {
+    //if (/imagini/.test(i)) {
       document.querySelector("#imageShow").insertAdjacentHTML(
         'afterbegin',
         `<div class="col-md-4">
             <div class="card">
-              <a class="lightbox" data-toggle="lightbox" href="${imagini[i]}">
-              <img class="card-img-top" alt="" src="${imagini[i]}">
+              <a class="lightbox" data-toggle="lightbox" href="${proiecte.imagini[i]}">
+              <img class="card-img-top" alt="" src="${proiecte.imagini[i]}">
             </div>
           </div>`
       )
-    }
+    //}
   }
 
   document.querySelector("#mainDiv").insertAdjacentHTML(
     'afterbegin',
-    `<h1>${imagini.nume}</h1>
+    `<h1>${proiecte.nume}</h1>
      <hr class=light">`)
 }
 
