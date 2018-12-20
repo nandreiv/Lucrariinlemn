@@ -49,9 +49,6 @@ function deleteProject(idx) {
   }
 }
 
-function uploadProject() {
-  var projectName = document.querySelector("#projectName").innerHTML;
-  var projectCategory = document.querySelector("#projectCategory").innerHTML;
+function uploadProject () {
 
-  
-}
+};

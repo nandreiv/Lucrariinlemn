@@ -62,10 +62,10 @@
               <input id="projectName" name="project" type="text" placeholder="Nume Proiect" class="form-control">
               <input id="projectCategory" name="category" type="text" placeholder="Categorie" class="form-control">
               <div class="custom-file" id="customFileDiv">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose file</label>
+                  <input type="file" class="custom-file-input" id="customFile" multiple>
+                  <label class="custom-file-label" for="customFile" id="chooseFile">Choose file</label>
                 </div>
-              <button class="btn btn-primary btn-lg" id="submitAdd">Adauga</button>
+              <button class="btn btn-primary btn-lg" id="submitAdd" onclick="uploadProject();">Adauga</button>
             </div>
           </form>
         </div>
@@ -108,25 +108,43 @@
     </div>
   </footer>
 
-  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
-  <script src="../Lucrariinlemn/scripts/admin.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  
+  <script src="../Lucrariinlemn/scripts/admin.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
   <script>
-      // Initialize Firebase
-      // TODO: Replace with your project's customized code snippet
-      var config = {
-        apiKey: "AIzaSyCB58QyY8DpvyAVHSEsXR8buV3mZBZ8TpY",
-        databaseURL: "https://lucrari-in-lemn.firebaseio.com/",
-        storageBucket: "lucrari-in-lemn.appspot.com",
-      };
-      firebase.initializeApp(config);
-    </script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBnpRgj1X4vrinJ_qoENo0oq_Ynq216Y7o",
+      authDomain: "lucrari-in-lemn.firebaseapp.com",
+      databaseURL: "https://lucrari-in-lemn.firebaseio.com",
+      projectId: "lucrari-in-lemn",
+      storageBucket: "lucrari-in-lemn.appspot.com",
+      messagingSenderId: "295356026632"
+    };
+    firebase.initializeApp(config);
+
+    var inputFile = document.getElementById('customFile');
+     var projName = "";
+
+    console.log(projectName);
+
+    inputFile.addEventListener('change', function(e) {
+
+      projName = document.querySelector('#projectName').value;
+      var file = e.target.files[0];
+
+      var storageRef = firebase.storage().ref(projName +`/`+file.name);
+
+      storageRef.put(file);
+    })
+
+  </script>
 </body>
 
 </html>
