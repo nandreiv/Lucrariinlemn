@@ -2,7 +2,7 @@ function getProjects() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      imagini = JSON.parse(this.responseText);
+      proiecte = JSON.parse(this.responseText);
       drawCards();
     }
   };
@@ -12,20 +12,21 @@ function getProjects() {
 
 function drawCards() {
 
-  for (var i in imagini) {
+  for (var i in proiecte) {
 
-    if (imagini[i] !== null) {
+    if (proiecte[i] !== null) {
 
       document.querySelector("#contentProjects").insertAdjacentHTML(
         'afterbegin',
         `<div class="col-md-4">
         <div class="card">
-          <img class="card-img-top" src="${imagini[i].imagine1}">
+          <img class="card-img-top" src="${proiecte[i].imagini[0]}">
           <div class="card-body">
-            <h4 class="card-title">${imagini[i].nume}</h4>
+            <h4 class="card-title">${proiecte[i].nume}</h4>
             <div class="adminBtn">
+              <button  class="btn btn-info btn-sm" onclick="modifyProject(${i});">Modifica</button>
               <button  class="btn btn-danger btn-sm" onclick="deleteProject(${i});">Sterge</button>
-            </div>
+              </div>
           </div>
         </div>
       </div>`
@@ -46,4 +47,11 @@ function deleteProject(idx) {
     xhttp.open("DELETE", `https://lucrari-in-lemn.firebaseio.com/${idx}.json`, true);
     xhttp.send();
   }
+}
+
+function uploadProject() {
+  var projectName = document.querySelector("#projectName").innerHTML;
+  var projectCategory = document.querySelector("#projectCategory").innerHTML;
+
+  
 }
