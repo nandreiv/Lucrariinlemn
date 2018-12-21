@@ -1,4 +1,4 @@
-[  { 
+[  {
   "categorie" : "Scari",
   "nume":"Placare scara proiect Maria",
   "imagini": ["https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria.jpg?raw=true",
@@ -14,7 +14,24 @@
   "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria_10.jpg?raw=true",
   "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/maria/placare_scara_proiect_maria_11.jpg?raw=true"]
 },
-{ 
+{
+  "categorie" : "Scari",
+  "nume":"Placare scara proiect Voicu",
+  "imagini":["https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_1.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_2.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_3.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_4.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_5.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_6.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_7.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_8.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_9.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_10.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_11.jpg?raw=true",
+    "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu/scara_voicu_1-scara_placare_beton_12.jpg?raw=true"]
+},
+{
   "categorie" : "Scari",
   "nume":"Placare scara proiect Voicu 2",
   "imagini":["https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu2/placare_beton_proiect_voicu_2.jpg?raw=true",
@@ -33,7 +50,7 @@
     "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu2/placare_beton_proiect_voicu_2_13.jpg?raw=true",
     "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/voicu2/placare_beton_proiect_voicu_2_14.jpg?raw=true"]
 },
-{ 
+{
   "categorie" : "Scari",
   "nume":"Placare scara proiect Gelu",
   "imagini":["https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/gelu/scara_geluc-scara_placare_beton.jpg?raw=true",
@@ -56,6 +73,24 @@
     "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/gelu/scara_geluc-scara_placare_beton_17.jpg?raw=true",
     "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/gelu/scara_geluc-scara_placare_beton_18.jpg?raw=true",
     "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/gelu/scara_geluc-scara_placare_beton_19.jpg?raw=true"]
+},
+{
+  "categorie" : "Scari",
+  "nume":"Placare scara proiect Berceni",
+  "imagini":["https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_1.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_2.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_3.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_4.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_5.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_6.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_7.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_8.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_9.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_10.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_11.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_12.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_13.jpg?raw=true",
+  "https://github.com/nandreiv/Lucrariinlemn/blob/master/img/scari/berceni/scara_pe_suport_de_lemn_berceni_2012_14.jpg?raw=true"]
 }
 ]
-  
