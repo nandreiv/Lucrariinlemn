@@ -139,9 +139,23 @@
       projName = document.querySelector('#projectName').value;
       var file = e.target.files[0];
 
-      var storageRef = firebase.storage().ref(projName +`/`+file.name);
+      var storageRef = firebase.storage().ref(file.name);
 
       storageRef.put(file);
+
+      /*var uploadTask = storageRef.put(file);
+
+      uploadTask.on(`state_changed`, function(){
+        var postKey = firebase.database().ref().push().key;
+        var downloadURL = uploadTask.snapshot.downloadURL;
+
+        var newProject = {};
+        var postData = [
+          nume: 
+          categorie :
+          
+        ];*/
+      
     })
 
   </script>
